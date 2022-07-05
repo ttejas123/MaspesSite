@@ -277,7 +277,7 @@ header {
 }
 
 .bg-gradient-copy {
-    padding-top: 200px;
+    padding-top: 80px;
     /*padding-b: 300px;*/
     /*background-image: -moz-linear-gradient( 135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%);*/
     /*background-image: -webkit-linear-gradient( 135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%);*/
@@ -483,12 +483,19 @@ header {
 }
 
 .nav-tabs .nav-link.active {
+    position: absolute;
+    top: -2px;
+    left: 4px;
+    width: 95%;
     background: #000;
     border-width: 4px 2px 0px 2px;
     border-color: #25C3C8 #25C3C8 transparent #25C3C8;
     color: #fff;
 }
 
+.nav-justified .nav-item{
+    position: relative;
+}
 
 /*  TESTIMONIALS
 ----------------------*/
@@ -505,7 +512,7 @@ header {
     max-width: 80%;
     margin: 0 auto;
 }
-.pricing:{
+.pricing{
     border-radius: 50rem;
 }
 .blockquote {
@@ -745,5 +752,6 @@ height: 1rem;
 .tab-content{
     border-left: 2px solid #25C3C8;
     border-right: 2px solid #25C3C8;
+    border-bottom: 2px solid #25C3C8;
     border-bottom: 2px solid #25C3C8;
 }
