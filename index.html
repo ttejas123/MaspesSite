@@ -519,14 +519,6 @@ restaurante.</p>
 
 
 
-
-
-
-
-
-
-
-
     <div class="section dark-bg">
         <div class="container position-relative">
             <div class="section-title">
@@ -642,10 +634,12 @@ restaurante.</p>
                         },
                     ],
                     mode: "subscription",
-                    successUrl: "https://harmonious.netlify.app",
-                    cancelUrl: "https://harmonious.netlify.app"
+                    successUrl: "http://127.0.0.1:5500/index.html",
+                    cancelUrl: "http://127.0.0.1:5500/index.html"
                 }).then(result => {
-                    // console.log(result);
+                     console.log(result);
+                     console.log("subscription");
+                     window.alert("Payment successfull")
                 })
         })
 
@@ -661,8 +655,10 @@ restaurante.</p>
                     successUrl: "https://harmonious.netlify.app",
                     cancelUrl: "https://harmonious.netlify.app"
                 }).then(result => {
-                    // console.log(result);
+                     console.log(result);
+                  
                 })
+                
         })
 
         document.getElementById("oro").addEventListener("click", function() {
@@ -678,7 +674,7 @@ restaurante.</p>
                     successUrl: "https://harmonious.netlify.app",
                     cancelUrl: "https://harmonious.netlify.app"
                 }).then(result => {
-                    // console.log(result);
+                     console.log(result);
                 })
         })
     </script>
